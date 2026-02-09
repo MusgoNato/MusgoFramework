@@ -1,13 +1,10 @@
 <?php 
 
-namespace App\Chore\Cli;
+namespace App\Cli\Commands;
 
-use App\Chore\Cli\Command;
+use App\Cli\Commands\Command;
 use App\Chore\Route;
 use App\Helpers\TerminalColors;
-use ErrorException;
-use SplFileInfo;
-
 
 enum EnumFlagsRouteCommand: string
 {

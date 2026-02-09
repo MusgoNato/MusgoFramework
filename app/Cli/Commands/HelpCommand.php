@@ -1,8 +1,8 @@
 <?php 
 
-namespace App\Chore\Cli;
+namespace App\Cli;
 
-use App\Chore\Cli\Command;
+use App\Cli\Commands\Command;
 
 class HelpCommand extends Command
 {

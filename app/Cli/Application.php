@@ -1,6 +1,9 @@
 <?php 
 
-namespace App\Chore\Cli;
+namespace App\Cli;
+
+use App\Cli\Commands\RouteListCommand;
+
 
 class Application
 {

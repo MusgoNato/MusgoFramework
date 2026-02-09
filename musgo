@@ -4,7 +4,7 @@
 
 require 'bootstrap/app.php';
 
-use App\Chore\Cli\Application;
+use App\Cli\Application;
 
 $app = new Application();
 $app->run($argv);

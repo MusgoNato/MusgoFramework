@@ -1,6 +1,6 @@
 <?php 
 
-namespace App\Chore\Cli;
+namespace App\Cli\Commands;
 
 abstract class Command
 {

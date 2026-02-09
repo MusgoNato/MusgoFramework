@@ -17,7 +17,6 @@ function view(string $view, string|array $props = [])
         throw new Exception("View {$view} não existe!");
     }
 
-    // Extrai as variaveis colocadas dentro da funcao
     extract($props, EXTR_SKIP);
 
     ob_start();
