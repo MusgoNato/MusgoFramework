@@ -1,0 +1,10 @@
+#!/usr/bin/env php
+
+<?php
+
+require 'bootstrap/app.php';
+
+use App\Chore\Cli\Application;
+
+$app = new Application();
+$app->run($argv);
