@@ -1,16 +1,18 @@
 <?php 
 
-namespace App\Cli;
+namespace App\Cli\Commands;
 
 use App\Cli\Commands\Command;
+use App\Helpers\TerminalColors;
 
 class HelpCommand extends Command
 {
    public function handle(array $args): void
    {      
-      echo "\e[33mComandos disponíveis:\e[032m 
-      route::list \e[34m Lista todas as rotas disponíves na aplicação
-      \e[0m";
+      echo TerminalColors::TEXT['yellow'] . "Comandos disponíveis:\n" 
+      . TerminalColors::TEXT['green'] 
+      . "\troutes\t" . TerminalColors::TEXT['white'] . "=>\t" . TerminalColors::TEXT['cyan'] . "Lista as informações básicas de todas as rotas disponíves na aplicação\n"
+      . TerminalColors::RESET;
    }
 
 

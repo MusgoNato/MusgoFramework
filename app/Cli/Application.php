@@ -2,8 +2,8 @@
 
 namespace App\Cli;
 
+use App\Cli\Commands\HelpCommand;
 use App\Cli\Commands\RouteListCommand;
-
 
 class Application
 {
@@ -45,7 +45,7 @@ class Application
     {
         $this->commands = [
             'help' => HelpCommand::class,
-            'route::list' => RouteListCommand::class,
+            'routes' => RouteListCommand::class,
         ];
     } 
 }
