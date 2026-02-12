@@ -12,6 +12,8 @@ class HelpCommand extends Command
       echo TerminalColors::TEXT['yellow'] . "Comandos disponíveis:\n" 
       . TerminalColors::TEXT['green'] 
       . "\troutes\t" . TerminalColors::TEXT['white'] . "=>\t" . TerminalColors::TEXT['cyan'] . "Lista as informações básicas de todas as rotas disponíves na aplicação\n"
+      . TerminalColors::TEXT['green']
+      . "\tcontroller\t" . TerminalColors::TEXT['white'] . "=>\t" . TerminalColors::TEXT['cyan'] . "Criação de controllers\n"      
       . TerminalColors::RESET;
    }
 

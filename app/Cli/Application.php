@@ -2,6 +2,7 @@
 
 namespace App\Cli;
 
+use App\Cli\Commands\ControllerCommand;
 use App\Cli\Commands\HelpCommand;
 use App\Cli\Commands\RouteListCommand;
 use App\Helpers\TerminalColors;
@@ -52,6 +53,7 @@ class Application
         $this->commands = [
             'help' => HelpCommand::class,
             'routes' => RouteListCommand::class,
+            'controller' => ControllerCommand::class,
         ];
     } 
 }
