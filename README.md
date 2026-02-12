@@ -7,7 +7,7 @@ O projeto prioriza **clareza**, **controle total do fluxo** e **código explíci
 ## 📁 Estrutura do Projeto
 
 ```text
-MyRouterPHP/
+MusgoFramework/
 ├── app/
 │   ├── Chore/
 |   |    └── CLI/
@@ -82,6 +82,7 @@ A CLI permite listar rotas registradas e visualizar informações diretamente no
 
 ## Próximas adições
 - Middleware básico
+- Criação de controllers e views via terminal
 
 ## Motivação
 

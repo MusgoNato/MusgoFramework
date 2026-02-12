@@ -4,6 +4,7 @@ namespace App\Cli;
 
 use App\Cli\Commands\HelpCommand;
 use App\Cli\Commands\RouteListCommand;
+use App\Helpers\TerminalColors;
 
 class Application
 {
@@ -25,7 +26,12 @@ class Application
 
         if(!isset($this->commands[$commandName]))
         {
-            echo "Comando {$commandName} nao encontrado!";
+            echo TerminalColors::TEXT['red'] 
+            . "Comando '{$commandName}' não encontrado. Digite"
+            . TerminalColors::TEXT['white'] . " php musgo help " 
+            . TerminalColors::TEXT['red'] 
+            . "para listar os comandos disponíveis!" 
+            . TerminalColors::RESET;
             return;
         }
         else
