@@ -83,6 +83,7 @@ A CLI permite listar rotas registradas e visualizar informações diretamente no
 ## Próximas adições
 - Middleware básico
 - Criação de controllers e views via terminal
+- Configuração da aplicação por meio do arquivo .env
 
 ## Motivação
 
