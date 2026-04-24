@@ -25,14 +25,19 @@ ConfigEnv::load(dirname(__DIR__, 1) . "\\config");
  * 
  * Com abstract Model:
  * abstract class
- * class Model
- * protected PDO $pdo;
- * _construct(PDO $pdo){$this->pdo = $pdo;}  
- * 
- * Em qulquer model criado, extendido de Model:
+ * class Model{
+ *      protected PDO $pdo;
+ *      public _construct(PDO $pdo){
+ *          $this->pdo = $pdo;
+ *      }  
+ * }
+ * Em qualquer model criado, extendido de Model:
  * $this->pdo->connection()->query("SELECT * FROM users");
  */
-$pdo = DatabaseInitConnection::get();
+
+
+// O Model ja faz essa conexão com o banco de dados, sendo não mais necessário aqui
+// $pdo = DatabaseInitConnection::get();
 
 // Carregamento das rotas
 require dirname(__DIR__, 1) . '\\routes\\web.php';
